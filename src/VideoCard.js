@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import "./VideoCard.css";
 import VideoFooter from './VideoFooter';
 import VideoHeader from './VideoHeader';
@@ -6,30 +6,23 @@ import VideoHeader from './VideoHeader';
 
 function VideoCard({url, likes, shares, channel, avatarSrc, song}) {
 
-    const [isVideoPlaying, setVideoPlaying] = useState(false);
-    const videoRef = useRef(null);
-    const onVideoPress = () => {
-        if (isVideoPlaying) {
-            // stop
-            videoRef.current.pause();
-            setVideoPlaying(false);
-        } else {
-            // play
-            videoRef.current.play();
-            setVideoPlaying(true);
-        }
+    const [isLiked, setIsLiked] = useState(false);
+    const setLike = () => {
+        setIsLiked(!isLiked);
     }
 
     return (
         <div className="videoCard"> 
             <VideoHeader />
             <video 
-                ref={videoRef} 
-                onClick={onVideoPress} 
                 className="video__player" 
                 src={url} 
                 alt="ig-reel-video" 
                 loop
+                autoPlay
+                playsInline
+                muted
+                onDoubleClick={setLike}
             />
             <VideoFooter 
                 channel={channel}
@@ -37,6 +30,8 @@ function VideoCard({url, likes, shares, channel, avatarSrc, song}) {
                 shares={shares}
                 avatarSrc={avatarSrc}
                 song={song}
+                isLiked={isLiked}
+                setIsLiked={setIsLiked}
             />
         </div>
     )
