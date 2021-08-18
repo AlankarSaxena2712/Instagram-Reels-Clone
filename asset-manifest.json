@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Instagram-Reels-Clone/static/css/main.250e037e.chunk.css",
+    "main.js": "/Instagram-Reels-Clone/static/js/main.78117496.chunk.js",
+    "main.js.map": "/Instagram-Reels-Clone/static/js/main.78117496.chunk.js.map",
+    "runtime-main.js": "/Instagram-Reels-Clone/static/js/runtime-main.b714ce2d.js",
+    "runtime-main.js.map": "/Instagram-Reels-Clone/static/js/runtime-main.b714ce2d.js.map",
+    "static/js/2.723a581a.chunk.js": "/Instagram-Reels-Clone/static/js/2.723a581a.chunk.js",
+    "static/js/2.723a581a.chunk.js.map": "/Instagram-Reels-Clone/static/js/2.723a581a.chunk.js.map",
+    "static/js/3.a3312ce8.chunk.js": "/Instagram-Reels-Clone/static/js/3.a3312ce8.chunk.js",
+    "static/js/3.a3312ce8.chunk.js.map": "/Instagram-Reels-Clone/static/js/3.a3312ce8.chunk.js.map",
+    "index.html": "/Instagram-Reels-Clone/index.html",
+    "static/css/main.250e037e.chunk.css.map": "/Instagram-Reels-Clone/static/css/main.250e037e.chunk.css.map",
+    "static/js/2.723a581a.chunk.js.LICENSE.txt": "/Instagram-Reels-Clone/static/js/2.723a581a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b714ce2d.js",
+    "static/js/2.723a581a.chunk.js",
+    "static/css/main.250e037e.chunk.css",
+    "static/js/main.78117496.chunk.js"
+  ]
+}
